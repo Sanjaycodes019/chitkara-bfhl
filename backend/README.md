@@ -46,12 +46,19 @@ Processes hierarchical node strings and returns tree hierarchies.
 }
 ```
 
-## Deployment on Vercel
+## Deployment on Render
 
 1. Push this backend to a GitHub repository (e.g., `chitkara-bfhl-api`)
-2. Import the repository to Vercel
-3. Vercel will automatically detect `vercel.json` and deploy as serverless functions
-4. Note the deployed URL (e.g., `https://chitkara-bfhl-api.vercel.app`)
+2. Go to [render.com](https://render.com) and sign in
+3. Click "New +" → "Web Service"
+4. Connect your GitHub repository
+5. Configure:
+   - **Name**: chitkara-bfhl-api
+   - **Environment**: Node
+   - **Build Command**: `npm install`
+   - **Start Command**: `node index.js`
+6. Click "Deploy Web Service"
+7. Note the deployed URL (e.g., `https://chitkara-bfhl-api.onrender.com`)
 
 ## Features
 
