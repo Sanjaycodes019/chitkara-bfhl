@@ -108,7 +108,7 @@ function App() {
                   {hierarchy.has_cycle ? (
                     <div className="cycle-warning">
                       <span className="warning-badge">⚠ Cycle Detected</span>
-                      <p className="tree-empty-note">tree: {{}}</p>
+                      <p className="tree-empty-note">tree: {"{}"}</p>
                     </div>
                   ) : (
                     <div className="tree-content">
