@@ -256,6 +256,19 @@ body {
   padding: 5px 0;
 }
 
+.tree-node-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tree-line {
+  width: 20px;
+  height: 2px;
+  background: #667eea;
+  border-radius: 1px;
+}
+
 .tree-node {
   display: inline-block;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);

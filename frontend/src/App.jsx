@@ -36,10 +36,13 @@ function App() {
     if (entries.length === 0) return null;
 
     return (
-      <ul style={{ marginLeft: `${level * 20}px` }}>
+      <ul className={`tree-level-${level}`}>
         {entries.map(([node, children]) => (
           <li key={node}>
-            <span className="tree-node">{node}</span>
+            <div className="tree-node-wrapper">
+              {level > 0 && <div className="tree-line"></div>}
+              <span className="tree-node">{node}</span>
+            </div>
             {renderTree(children, level + 1)}
           </li>
         ))}
